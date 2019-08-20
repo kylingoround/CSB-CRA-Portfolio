@@ -16,13 +16,28 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const NavWrapper = styled.div`
+const MommyNavWrapper = styled.div`
   position: fixed;
+  width: 100%;
+  background: #fff;
+`;
+
+const BabyNavWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  max-width: 782px;
+  /* height: 10px; */
+  margin: 20px auto;
+`;
+
+const Ghost = styled.div`
+  /* width: 50%; */
 `;
 
 const LinkWrapper = styled.div`
-  float: right;
   margin-right: 5px;
+  right: 0;
 `;
 
 const NavLink = props => (
@@ -38,13 +53,17 @@ const NavLink = props => (
 );
 
 const Nav = () => (
-  <NavWrapper>
-    <LinkWrapper>
-      <NavLink to="/">Work</NavLink>
-      <NavLink to="/lab">Lab</NavLink>
-      <NavLink to="/about">About</NavLink>
-    </LinkWrapper>
-  </NavWrapper>
+  <MommyNavWrapper>
+    <BabyNavWrapper>
+      <div>Don't mind me</div>
+      <Ghost />
+      <LinkWrapper>
+        <NavLink to="/">Work</NavLink>
+        <NavLink to="/lab">Lab</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </LinkWrapper>
+    </BabyNavWrapper>
+  </MommyNavWrapper>
 );
 
 export default Nav;

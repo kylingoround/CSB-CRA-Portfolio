@@ -6,7 +6,6 @@
   "main": "src/index.js",
   "dependencies": {
     "@reach/router": "1.2.1",
-    "babel-plugin-macros": "2.6.1",
     "markdown-to-jsx": "6.10.3",
     "react": "16.8.6",
     "react-dom": "16.8.6",

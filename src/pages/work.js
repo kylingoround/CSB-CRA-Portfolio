@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Link } from "@reach/router";
 
 import Nav from "../components/nav";
-
+import VerticalNav from "../components/VerticalNav";
+import Greetings from "../components/greetings";
 import Cyber from "../markdowns/cyber.md";
 
 const Intro = () => <div>KYLIN IS DREAMING IN CYBER SPACE</div>;
@@ -44,9 +45,11 @@ const ProjectList = () => (
 
 const Work = () => (
   <div>
-    <Nav />
-    <Intro />
-    <ProjectList />
+    {/* <Nav /> */}
+    <VerticalNav />
+    <Greetings />
+    {/* <Intro /> */}
+    {/* <ProjectList /> */}
   </div>
 );
 

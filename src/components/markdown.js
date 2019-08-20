@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import M2J from "markdown-to-jsx";
 import styled from "styled-components";
-import "styled-components/macro";
 
-// const H1 = props => <div>{props.children}</div>;
 const H1 = styled.h1`
   color: red;
   text-align: left;
@@ -15,8 +13,8 @@ const H2 = styled.h2`
 
 const Img = styled.img`
   /* max-height: 20vh; */
-  max-width: 100%;
-  text-align: center;
+  width: 100%;
+  height: auto;
 `;
 
 const PP = styled.div`
