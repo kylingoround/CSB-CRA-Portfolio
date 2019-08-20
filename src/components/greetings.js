@@ -31,9 +31,9 @@ const Indent = styled(BigText)`
 `;
 
 const Greetings = () => (
-  <SectionWrapper>
+  <SectionWrapper id="main">
     <FlexWrapper>
-      <TextWrapper>
+      <div>
         <BigText>
           KYLIN CHEN <Grey>is</Grey>
         </BigText>
@@ -42,7 +42,7 @@ const Greetings = () => (
         </Indent>
         <BigText>EXPERIENCE</BigText>
         <BigText>DESIGNER</BigText>
-      </TextWrapper>
+      </div>
     </FlexWrapper>
   </SectionWrapper>
 );

@@ -3,9 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Router, Link } from "@reach/router";
 
-import Work from "./pages/work";
-import Lab from "./pages/lab";
-import About from "./pages/about";
+import Main from "./pages/main";
 
 import Cyber from "./projects/cyber";
 
@@ -15,9 +13,9 @@ function App() {
   return (
     <div>
       <Router>
-        <Work path="/" />
-        <Lab path="lab" />
-        <About path="about" />
+        <Main path="/" />
+        {/* <Lab path="lab" />
+        <About path="about" /> */}
 
         <Cyber path="cyber" />
       </Router>

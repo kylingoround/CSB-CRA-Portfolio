@@ -14,22 +14,34 @@ const VerticalCenteringWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
 `;
 
 const Dudu = styled.div`
   writing-mode: vertical-rl;
-  text-orientation: mixed;
+  /* text-orientation: mixed; */
 `;
 
-const NavLink = styled(Link)``;
+// const NavLink = styled(Link)`
+//   margin: 20px auto;
+// `;
 
+const NavLink = styled.a`
+  margin: 20px auto;
+`;
+
+// add transition
 const VerticalNav = () => (
   <NavWrapper>
     <VerticalCenteringWrapper>
       <Dudu>
-        <NavLink to="/">Work</NavLink>
-        <NavLink to="/lab">Lab</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink href="#main">Main</NavLink>
+        <NavLink href="#works">Work</NavLink>
+        <NavLink href="#lab">Lab</NavLink>
+        <NavLink href="#about">About</NavLink>
+
+        {/* <NavLink href="/lab">Lab</NavLink> */}
+        {/* <NavLink href="/about">About</NavLink> */}
       </Dudu>
     </VerticalCenteringWrapper>
   </NavWrapper>

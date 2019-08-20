@@ -5,6 +5,10 @@ import { Link } from "@reach/router";
 import Nav from "../components/nav";
 import VerticalNav from "../components/VerticalNav";
 import Greetings from "../components/greetings";
+import Works from "../components/works";
+import Lab from "../components/lab";
+import About from "../components/about";
+
 import Cyber from "../markdowns/cyber.md";
 
 const Intro = () => <div>KYLIN IS DREAMING IN CYBER SPACE</div>;
@@ -43,14 +47,18 @@ const ProjectList = () => (
   </div>
 );
 
-const Work = () => (
+const Main = () => (
   <div>
     {/* <Nav /> */}
     <VerticalNav />
-    <Greetings />
+    <Greetings id="main" />
+    <Works id="works" />
+    <Lab id="lab" />
+    <About id="about" />
     {/* <Intro /> */}
     {/* <ProjectList /> */}
+    <div>Footer like it mattered</div>
   </div>
 );
 
-export default Work;
+export default Main;
